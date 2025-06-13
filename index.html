@@ -6,7 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="post">
+<header style="background-color:rgb(199, 137, 137)",>
+<h1>Welcome to Alex's website</h1>
+<a href="https://youtu.be/24emkQkOB_A">Home</a>
+<a href="https://youtu.be/24emkQkOB_A">About us</a>
+<a href="https://youtu.be/24emkQkOB_A">products</a>
+<a href="https://youtu.be/24emkQkOB_A">Contact Us</a>
+<hr>
+</header>
+<main>
+    <h4>check out my profile pic</h4>
+    <img src="urban-fashion-9639853_1280.jpg" width="250 " height="250">
+    <p>Urban life style works best in every corner of the country even here in Rwanda </p>
+    </main>
+    <footer style="background-color:rgb(199, 137, 137)">
+        <hr>
+        author:Alex <br>
+        &copy; copyright reserved<br>
+       <small> <a href="mailto:tuyisengealex071@gmail.com">tuyisengealex071@gmail.com</a></small>
+    </footer>
+<br>
+<hr>
+<br>
+<br>
+<br>
+    <form action="index.php" method="post" enctype="multipart/form-data ">
 
         <label for="Username">Username:</label>
 <input type="text" id="Username" placeholder="spongeBob" minlength="6" maxlength="15" required><br>
@@ -18,7 +42,31 @@
 <input type="email" id="email" placeholder="tuyisengealex071@gmail.com"><br>
 
 <label for="phone">phone:</label>
-<input type="tel" id="phone">
+<input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+<label for="bday">Birthday</label>
+<input type="date" id="bday"><br>
+<label for="quantity">quantity:</label>
+<input type="number" id="quantity" min="0" max="2"><br>
+<label for="title">title:</label>
+<label for="Mrs">Mrs:</label>
+<input type="radio" id="Mrs" name="title">
+<label for="Mr">Mr</label>
+<input type="radio" id="Mr" name="title">
+<label for="PhD">PhD</label>
+<input type="radio" id="PhD" name="title"><br>
+<label for="subscribe">subscribe</label>
+<input type="checkbox" id="subscribe"><br>
+<label for="payment">payment</label>
+<select id="payment">
+<option value="visa">visa</option>
+<option value="mastercard">mastercard</option>
+<option value="paypal">paypal</option>
+</select><br>
+<label for="comment">comment:</label>
+<textarea id="comment" rows="3" cols="25" ></textarea><br>
+<label for="file">file:</label>
+<input type="file" id="file" accept="image/png,image/jpeg"><br>
+ 
 
 <input type="reset"><br>
 <input type="submit">
